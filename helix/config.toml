@@ -1,9 +1,10 @@
-theme = "gruvbox"
+theme = "jb_dark"
 
 [editor]
 bufferline = "always"
 color-modes = true
 text-width = 120
+line-number = "relative"
 
 [editor.auto-save]
 focus-lost = true
