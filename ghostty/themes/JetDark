@@ -1,0 +1,41 @@
+# JetBrains Dark - Ghostty Theme
+# Derived from Helix JetBrains Dark Theme
+
+foreground = #bcbec4
+background = #1e1f22
+cursor-color = #ced0d6
+selection-background = #214283
+selection-foreground = #ffffff
+
+# ANSI Colors
+# Black (Darker Greys)
+palette = 0=#1e1f22
+palette = 8=#4b5059
+
+# Red (Warm Oranges/Reds)
+palette = 1=#D1605A
+palette = 9=#d64d5b
+
+# Green
+palette = 2=#6aab73
+palette = 10=#499c54
+
+# Yellow (Golden/Muted Yellows)
+palette = 3=#d5b778
+palette = 11=#c29e4a
+
+# Blue (Action/Function Blues)
+palette = 4=#56a8f5
+palette = 12=#57aaf7
+
+# Magenta (Purples)
+palette = 5=#c77dbb
+palette = 13=#b3ae60
+
+# Cyan (Teal/Cooler Blues)
+palette = 6=#2aacb8
+palette = 14=#375fad
+
+# White (Text Greys)
+palette = 7=#bcbec4
+palette = 15=#ced0d6
