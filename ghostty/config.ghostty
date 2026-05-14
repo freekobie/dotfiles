@@ -1,0 +1,12 @@
+# window settings
+window-theme = ghostty
+maximize = true
+
+# GTK settings
+gtk-titlebar-hide-when-maximized = true
+
+# Appearance
+theme = Jubi
+font-family = Source Code Pro
+font-size = 13
+adjust-cell-height = 5
