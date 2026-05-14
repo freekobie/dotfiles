@@ -1,9 +1,40 @@
-theme = "jetbrains_dark"
+theme = "gruvbox"
 
 [editor]
 bufferline = "always"
+color-modes = true
+text-width = 120
 
 [editor.auto-save]
 focus-lost = true
 after-delay.enable = true
-after-delay.timeout = 5000
+after-delay.timeout = 3000
+
+[editor.inline-diagnostics]
+cursor-line = "hint"
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 25 
+max-indent-retain = 20
+wrap-at-text-width = true
+wrap-indicator = "↪"
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name"]
+center = []
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+diagnostics = ["warning", "error"]
+workspace-diagnostics = ["warning", "error"]
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "block"
+
+[keys.normal.g]
+"x" = ":buffer-close"
