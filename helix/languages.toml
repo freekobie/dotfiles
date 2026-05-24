@@ -5,6 +5,14 @@ command = "gopls"
 "ui.diagnostic.staticcheck" = true
 "formatting.gofumpt" = true
 
+[language-server.basedpyright]
+command = "basedpyright-langserver"
+args = ["--stdio"]
+
+[language-server.ruff]
+command = "ruff"
+args = ["server"]
+
 [[language]]
 name = "toml"
 auto-format = true
@@ -15,3 +23,39 @@ name = "go"
 language-servers = ["gopls"]
 auto-format = true
 formatter = { command = "goimports" }
+
+[[language]]
+name = "python"
+language-servers = ["basedpyright", "ruff"]
+auto-format = true
+
+[[language]]
+name = "toml"
+auto-format = true
+language-servers = ["tombi"]
+
+[[language]]
+name = "html"
+language-servers = ["vscode-html-language-server", "emmet-ls"]
+formatter = { command = "prettier", args = ["--parser", "html"] }
+auto-format = true
+
+[[language]]
+name = "css"
+language-servers = ["vscode-css-language-server", "emmet-ls"]
+formatter = { command = "prettier", args = ["--parser", "css"] }
+auto-format = true
+
+[[language]]
+name = "javascript"
+language-servers = ["typescript-language-server"]
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+auto-format = true
+
+[[language]]
+name = "gotmpl"
+scope = "source.gotmpl"
+injection-regex = "gotmpl"
+file-types = ["gohtml", "gotmpl", "yaml.gotmpl", "tpl"]
+roots = []
+language-servers = ["vscode-html-language-server", "gopls", "emmet-ls"]

@@ -29,7 +29,7 @@ tag = "red213"
 
 "ui.background" = { fg = "blue196", bg = "blue34" }
 "ui.gutter" = "blue56"
-"ui.gutter.selected" = { fg ="blue56", bg = "blue46" }
+"ui.gutter.selected" = { fg = "blue56", bg = "blue46" }
 "ui.linenr" = "blue89"
 "ui.linenr.selected" = "blue171"
 "ui.statusline" = { bg = "blue48" }
@@ -44,7 +44,7 @@ tag = "red213"
 "ui.virtual.whitespace" = "blue122"
 "ui.virtual.indent-guide" = "blue56"
 "ui.virtual.inlay-hint" = { fg = "blue145", bg = "blue50" }
-"ui.virtual.jump-label" = {fg = "red138", modifiers = ["bold"]}
+"ui.virtual.jump-label" = { fg = "red214", modifiers = ["bold"] }
 "ui.menu" = { bg = "blue48" }
 "ui.menu.selected" = { bg = "blue110" }
 "ui.menu.scroll" = { fg = "blue81", bg = "blue48" }
@@ -69,7 +69,6 @@ hint = "green156"
 "diagnostic.deprecated" = { modifiers = ["crossed_out"] }
 
 [palette]
-red138 = "#B79A97"
 red179 = "#b3ae60"
 red194 = "#c29e4a"
 red199 = "#c77dbb"

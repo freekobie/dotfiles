@@ -1,0 +1,45 @@
+{
+  "helix_mode": true,
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "agent": {
+    "sidebar_side": "right",
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "dock": "left",
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "base_keymap": "JetBrains",
+  "ui_font_size": 17,
+  "ui_font_family": "Work Sans",
+  "buffer_font_size": 16,
+  "buffer_font_family": "Hack",
+  "theme": {
+    "mode": "system",
+    "light": "Gruvbox Light",
+    "dark": "JetBrains Dark",
+  },
+  "disable_ai": false,
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000,
+    },
+  },
+  "preferred_line_length": 120,
+  "soft_wrap": "bounded",
+  "show_wrap_guides": false,
+  "auto_update": false,
+}

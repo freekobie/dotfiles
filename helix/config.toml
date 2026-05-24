@@ -1,4 +1,4 @@
-theme = "jb_dark"
+theme = "jet_dark"
 
 [editor]
 bufferline = "always"
@@ -16,7 +16,7 @@ cursor-line = "hint"
 
 [editor.soft-wrap]
 enable = true
-max-wrap = 25 
+max-wrap = 25
 max-indent-retain = 20
 wrap-at-text-width = true
 wrap-indicator = "↪"
@@ -24,11 +24,18 @@ wrap-indicator = "↪"
 [editor.statusline]
 left = ["mode", "spinner", "file-name"]
 center = []
-right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+right = [
+  "diagnostics",
+  "selections",
+  "position",
+  "file-encoding",
+  "file-line-ending",
+  "file-type"
+]
 separator = "│"
-mode.normal = "NORMAL"
-mode.insert = "INSERT"
-mode.select = "SELECT"
+mode.normal = "--NORMAL--"
+mode.insert = "--INSERT--"
+mode.select = "--SELECT--"
 diagnostics = ["warning", "error"]
 workspace-diagnostics = ["warning", "error"]
 
