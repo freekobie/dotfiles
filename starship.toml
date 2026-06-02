@@ -14,7 +14,7 @@ error_symbol = "[](bold red)"
 
 [directory]
 home_symbol = "~"
-truncation_length = 5
+truncation_length = 50
 truncation_symbol = ".../"
 
 [username]
@@ -26,7 +26,7 @@ show_always = true
 
 [python]
 format = "via [$virtualenv]($style) "
-style = "bright-black"
+style = "yellow bold"
 detect_extensions = []
 detect_files = []
 

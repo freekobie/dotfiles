@@ -44,5 +44,9 @@ normal = "block"
 insert = "bar"
 select = "block"
 
+[editor.indent-guides]
+render = true
+character = "│"
+
 [keys.normal.g]
 "x" = ":buffer-close"
