@@ -1,4 +1,4 @@
-theme = "jet_dark"
+theme = "kanagawa_wave"
 
 [editor]
 bufferline = "always"
@@ -9,7 +9,7 @@ line-number = "relative"
 [editor.auto-save]
 focus-lost = true
 after-delay.enable = true
-after-delay.timeout = 3000
+after-delay.timeout = 1000
 
 [editor.inline-diagnostics]
 cursor-line = "hint"
@@ -45,7 +45,7 @@ insert = "bar"
 select = "block"
 
 [editor.indent-guides]
-render = true
+render = false
 character = "│"
 
 [keys.normal.g]

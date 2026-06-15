@@ -1,7 +1,7 @@
 # window settings
 window-theme = ghostty
-maximize = false
-window-width = 150
+maximize = true
+window-width = 140
 window-height = 35
 window-padding-x = 5
 window-padding-y = 5
@@ -10,7 +10,9 @@ window-padding-y = 5
 gtk-titlebar-hide-when-maximized = true
 
 # Appearance
-theme = JetDark
-font-family = Intel One Mono
-font-size = 13
-adjust-cell-height = 5
+theme = KanagawaWave
+font-family = Sudo
+font-size = 13.5
+adjust-cell-height = 3
+cursor-style = block
+shell-integration-features = no-cursor

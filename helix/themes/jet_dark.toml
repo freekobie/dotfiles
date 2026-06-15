@@ -14,7 +14,7 @@ function = "blue245"
 "function.macro" = "red179"
 tag = "red213"
 
-"markup.heading" = { fg = "red199", modifiers = ["italic"] }
+"markup.heading" = { fg = "red199", modifiers = ["bold"] }
 "markup.heading.marker" = "red207"
 "markup.list" = "red207"
 "markup.bold" = { modifiers = ["bold"] }

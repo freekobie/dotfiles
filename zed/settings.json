@@ -1,45 +1,51 @@
 {
-  "helix_mode": true,
-  "project_panel": {
-    "dock": "left",
-  },
   "outline_panel": {
     "dock": "left",
   },
   "collaboration_panel": {
     "dock": "left",
   },
-  "agent": {
-    "sidebar_side": "right",
-    "dock": "right",
-    "favorite_models": [],
-    "model_parameters": [],
-  },
   "git_panel": {
     "dock": "left",
   },
+  "project_panel": {
+    "dock": "left",
+  },
+  "icon_theme": "Zed (Default)",
+  "cli_default_open_behavior": "new_window",
+  "helix_mode": false,
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
   },
   "base_keymap": "JetBrains",
   "ui_font_size": 17,
-  "ui_font_family": "Work Sans",
-  "buffer_font_size": 16,
-  "buffer_font_family": "Hack",
+  "ui_font_family": "Sudo UI",
+  "buffer_font_size": 17.0,
+  "buffer_font_family": "Sudo",
+  "buffer_line_height": {
+    "custom": 1.4,
+  },
+  "agent_buffer_font_size": 16,
   "theme": {
     "mode": "system",
-    "light": "Gruvbox Light",
-    "dark": "JetBrains Dark",
+    "light": "One Light",
+    "dark": "One Dark",
   },
-  "disable_ai": false,
+  "disable_ai": true,
   "autosave": {
     "after_delay": {
       "milliseconds": 1000,
     },
   },
+  "tabs": {
+    "file_icons": true,
+  },
   "preferred_line_length": 120,
   "soft_wrap": "bounded",
   "show_wrap_guides": false,
   "auto_update": false,
+  "title_bar": {
+    "show_sign_in": false,
+  },
 }
