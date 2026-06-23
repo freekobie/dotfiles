@@ -1,5 +1,5 @@
-spawn-at-startup "qs" "-c" "noctalia-shell"
-// spawn-at-startup "swaybg" "-i" "~/Pictures/anime.png" "-m" "fill"
+spawn-at-startup "noctalia"
+// spawn-at-startup "swaybg" "-i" "~/Pictures/globe.jpg" "-m" "fill"
 input {
     keyboard {
         xkb {
@@ -25,27 +25,27 @@ input {
     // Setting max-scroll-amount="0%" makes it work only on windows already fully on screen.
     focus-follows-mouse max-scroll-amount="100%"
 }
+output "HDMI-A-1" {
+    mode "3840x2160@60"
+    scale 1.5
+    position x=0 y=0
+}
 output "eDP-1" {
     // Uncomment this line to disable this output.
     // off
     mode "1920x1080@60"
-    // You can use integer or fractional scale, for example use 1.5 for 150% scale.
-    scale 1.3
+    scale 1.2
     // Transform allows to rotate the output counter-clockwise, valid values are:
     // normal, 90, 180, 270, flipped, flipped-90, flipped-180 and flipped-270.
     transform "normal"
-    position x=1280 y=0
-}
-output "HDMI-A-1" {
-    mode "3840x2160@60"
-    scale 1.4
+    position x=1920 y=0
 }
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
 // https://niri-wm.github.io/niri/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 7
+    gaps 8
     center-focused-column "never"
     // You can customize the widths that "switch-preset-column-width" (Mod+R) toggles between.
     preset-column-widths {
@@ -62,11 +62,9 @@ layout {
         proportion 0.5
     }
     focus-ring {
-        width 3
-        active-color "#7fc8ff"
+        width 2
+        active-color "#D27E99"
         inactive-color "#505050"
- // active-gradient from="#80c8ff" to="#c7ff7f" angle=45
-        // inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
     }
 }
 hotkey-overlay {
@@ -102,77 +100,50 @@ block-out-from "screen-capture"
 window-rule {
     geometry-corner-radius 8
     clip-to-geometry true
-}
-window-rule {
-    match app-id="Nautilus"
-    opacity 0.95
     draw-border-with-background false
+    opacity 1.0
     background-effect {
-        blur true
-    }
-    popups {
-        opacity 0.95
-        background-effect {
-            blur true
-        }
-    }
-}
-window-rule {
-    match app-id="ghostty"
-    opacity 0.95
-    background-effect {
-        blur true
-    }
-    popups {
-        opacity 0.95
-        background-effect {
-            blur true
-        }
+        blur false
     }
 }
 window-rule {
     match app-id="zed"
-    opacity 0.95
+    opacity 0.98
+}
+window-rule {
+    match app-id="ghostty"
+    opacity 0.98
     draw-border-with-background false
-    background-effect {
-        blur true
-    }
-    popups {
-        opacity 0.95
-        background-effect {
-            blur true
-        }
-    }
 }
 layer-rule {
-    match namespace="^launcher$"
-    opacity 0.98
     geometry-corner-radius 8
     background-effect {
         blur false
     }
 }
-// // Set the regular wallpaper on the backdrop.
-// layer-rule {
-//     match namespace="^noctalia-wallpaper*"
-//     place-within-backdrop true
-// }
-
-overview {
-  // Choose your favorite color.
-  backdrop-color "#4287f5"
+layer-rule {
+    match namespace="^launcher$"
+    opacity 0.98
 }
-
+overview {
+    backdrop-color "#957FB8"
+}
 binds {
     Mod+Shift+Slash {
         show-hotkey-overlay
     }
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" {
+    Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" {
         spawn "ghostty"
     }
-    Alt+Space hotkey-overlay-title="Run an Application: fuzzel" {
-        spawn "fuzzel"
+    Mod+E hotkey-overlay-title="Open a File Explorer: nautilus" {
+        spawn "nautilus"
+    }
+    // Mod+Space hotkey-overlay-title="Run an Application: fuzzel" {
+    //     spawn "fuzzel"
+    // }
+    Mod+Space hotkey-overlay-title="Run an Application: noctalia launcher" {
+        spawn "noctalia" "msg" "panel-open" "launcher"
     }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" {
         spawn "swaylock"
@@ -638,8 +609,6 @@ binds {
         power-off-monitors
     }
 }
-// include "dms/outputs.kdl"
-// include "dms/cursor.kdl"
 debug {
     // Allows notification actions and window activation from Noctalia.
     honor-xdg-activation-with-invalid-serial

@@ -13,6 +13,16 @@ args = ["--stdio"]
 command = "ruff"
 args = ["server"]
 
+[language-server.dart]
+command = "dart"
+args = ["language-server"]
+
+[[language]]
+name = "dart"
+language-servers = ["dart"]
+indent = { tab-width = 2, unit = "  " }
+formatter = { command = "dart", args = ["format"] }
+
 [[language]]
 name = "toml"
 auto-format = true
@@ -37,19 +47,36 @@ language-servers = ["tombi"]
 [[language]]
 name = "html"
 language-servers = ["vscode-html-language-server", "emmet-ls"]
-formatter = { command = "prettier", args = ["--parser", "html"] }
+formatter = { command = "prettier", args = [
+  "--parser",
+  "html",
+  "--tab-width",
+  "4",
+  "--print-width",
+  "100"
+] }
 auto-format = true
 
 [[language]]
 name = "css"
 language-servers = ["vscode-css-language-server", "emmet-ls"]
-formatter = { command = "prettier", args = ["--parser", "css"] }
+formatter = { command = "prettier", args = [
+  "--parser",
+  "css",
+  "--tab-width",
+  "4"
+] }
 auto-format = true
 
 [[language]]
 name = "javascript"
 language-servers = ["typescript-language-server"]
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
+formatter = { command = "prettier", args = [
+  "--parser",
+  "typescript",
+  "--tab-width",
+  "4"
+] }
 auto-format = true
 
 [[language]]
