@@ -11,8 +11,9 @@ gtk-titlebar-hide-when-maximized = true
 
 # Appearance
 theme = KanagawaWave
+
 font-family = Intel One Mono
-font-size = 13.5
-adjust-cell-height = 3
+font-family = Hack
+font-size = 13
 cursor-style = block
 shell-integration-features = no-cursor
