@@ -10,10 +10,10 @@ window-padding-y = 5
 gtk-titlebar-hide-when-maximized = true
 
 # Appearance
-theme = KanagawaWave
+theme = JetDark
 
-font-family = Intel One Mono
-font-family = Hack
+font-family = Monaspace Argon
 font-size = 13
+font-feature = ss07, ss08, liga, calt, cv10, cv11, cv30
 cursor-style = block
 shell-integration-features = no-cursor

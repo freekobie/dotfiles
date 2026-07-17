@@ -11,7 +11,7 @@
 "ui.background" = { fg = "fujiWhite", bg = "sumiInk3" }
 
 "ui.linenr" = { fg = "sumiInk6" }
-"ui.linenr.selected" = { fg = "roninYellow", modifiers = ["bold"] }
+"ui.linenr.selected" = { fg = "roninYellow" }
 "ui.gutter" = { fg = "sumiInk6" }
 
 "ui.virtual" = "sumiInk6"
@@ -93,8 +93,6 @@ hint = "waveAqua1"
 "label" = "springBlue"
 "punctuation" = "springViolet2"
 "keyword" = { fg = "oniViolet" }
-"keyword.control.return" = "peachRed"
-"keyword.control.exception" = "peachRed"
 "keyword.directive" = "waveRed"
 "operator" = "boatYellow2"
 "function" = "crystalBlue"
