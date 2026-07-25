@@ -14,6 +14,6 @@ theme = JetDark
 
 font-family = Monaspace Argon
 font-size = 13
-font-feature = ss07, ss08, liga, calt, cv10, cv11, cv30
+font-feature = ss07, ss08, liga, calt, cv10, cv11
 cursor-style = block
 shell-integration-features = no-cursor

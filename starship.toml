@@ -1,7 +1,7 @@
 "$schema" = "https://starship.rs/config-schema.json"
 
 format = """
-directory\
+$directory\
 $git_branch\
 $git_status\
 $python\
@@ -10,13 +10,13 @@ $character\
 "add_newline" = false
 
 [character]
-success_symbol = "[𝝀](bold green)"
-error_symbol = "[𝝀](bold red)"
+success_symbol = "[➞](bold green)"
+error_symbol = "[➞](bold red)"
 
 [directory]
 home_symbol = "~"
 truncation_length = 50
-truncation_symbol = ".../"
+truncation_symbol = "*/"
 
 [python]
 format = "via [$virtualenv]($style) "
@@ -25,10 +25,12 @@ detect_extensions = []
 detect_files = []
 
 [git_branch]
-symbol = " "
+symbol = ""
+format = "git:[$symbol$branch(:$remote_branch)]($style) "
 truncation_length = 4
 truncation_symbol = ""
 # ignore_branches = ['master', 'main']
+
 
 [git_status]
 style = "bold white"

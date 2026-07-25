@@ -30,7 +30,6 @@
     "calt": true,
     "cv10": true,
     "cv11": true,
-    "cv30": true,
   },
   "buffer_line_height": {
     "custom": 1.4,
@@ -43,7 +42,6 @@
       "calt": true,
       "cv10": true,
       "cv11": true,
-      "cv30": true,
     },
     "line_height": {
       "custom": 1.4
