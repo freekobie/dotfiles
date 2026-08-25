@@ -1,8 +1,8 @@
 # window settings
 window-theme = ghostty
-maximize = true
-window-width = 140
-window-height = 35
+#maximize = true
+window-width = 150
+window-height = 55
 window-padding-x = 5
 window-padding-y = 5
 
@@ -12,8 +12,7 @@ gtk-titlebar-hide-when-maximized = true
 # Appearance
 theme = JetDark
 
-font-family = Monaspace Argon
+font-family = JetBrains Mono
 font-size = 13
-font-feature = ss07, ss08, liga, calt, cv10, cv11
 cursor-style = block
 shell-integration-features = no-cursor

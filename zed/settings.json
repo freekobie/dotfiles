@@ -22,30 +22,9 @@
   "ui_font_size": 17,
   "ui_font_family": "Adwaita Sans",
   "buffer_font_size": 17.0,
-  "buffer_font_family": "Monaspace Argon",
-  "buffer_font_features": {
-    "ss07": true,
-    "ss08": true,
-    "liga": true,
-    "calt": true,
-    "cv10": true,
-    "cv11": true,
-  },
+  "buffer_font_family": "JetBrains Mono",
   "buffer_line_height": {
-    "custom": 1.4,
-  },
-  "terminal": {
-    "font_features": {
-      "ss07": true,
-      "ss08": true,
-      "liga": true,
-      "calt": true,
-      "cv10": true,
-      "cv11": true,
-    },
-    "line_height": {
-      "custom": 1.4
-    }
+    "custom": 1.3,
   },
   "agent_buffer_font_size": 16,
   "theme": "One Dark",
