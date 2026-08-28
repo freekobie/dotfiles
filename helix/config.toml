@@ -1,4 +1,4 @@
-theme = "jet_dark"
+theme = "composer"
 
 [editor]
 bufferline = "always"

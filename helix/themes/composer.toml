@@ -1,14 +1,16 @@
 "comment" = { fg = "taupe" }
-"constant" = { fg = "coral" }
+"constant" = { fg = "pale" }
+"constant.builtin" = { fg = "pink" }
 "function" = { fg = "mint" }
 "function.macro" = { fg = "clay" }
+"function.builtin" = { fg = "pink" }
 "keyword" = { fg = "clay" }
 "operator" = { fg = "clay" }
-"punctuation" = { fg = "silk" }
+"punctuation" = { fg = "clay" }
 "string" = { fg = "coral" }
 "type" = { fg = "aqua" }
 "variable" = { fg = "silk" }
-"variable.builtin" = { fg = "aqua" }
+"variable.builtin" = { fg = "pink" }
 "tag" = { fg = "mint" }
 "label" = { fg = "coral" }
 "attribute" = { fg = "silk" }
@@ -34,11 +36,11 @@
 "ui.cursorline" = { fg = "silk", bg = "dusty_taupe" }
 "ui.statusline" = { fg = "silk", bg = "graphite" }
 "ui.statusline.inactive" = { fg = "taupe", bg = "graphite" }
-"ui.statusline.normal" = { fg = "graphite", bg = "silk", modifiers = ["bold"] }
+"ui.statusline.normal" = { fg = "graphite", bg = "coral", modifiers = ["bold"] }
 "ui.statusline.insert" = { fg = "graphite", bg = "mint", modifiers = ["bold"] }
 "ui.statusline.select" = { fg = "graphite", bg = "aqua", modifiers = ["bold"] }
-"ui.bufferline" = { fg = "silk", bg = "graphite" }
-"ui.bufferline.active" = { fg = "graphite", bg = "silk" }
+"ui.bufferline" = { fg = "taupe", bg = "graphite" }
+"ui.bufferline.active" = { fg = "silk", modifiers = ["bold", "underlined"] }
 "ui.popup" = { fg = "silk", bg = "graphite" }
 "ui.window" = { fg = "taupe", bg = "carbon" }
 "ui.help" = { fg = "silk", bg = "graphite" }
@@ -52,8 +54,10 @@
 "ui.virtual.indent-guide" = { fg = "brown" }
 "ui.virtual.inlay-hint" = { fg = "taupe" }
 "ui.virtual.jump-label" = { fg = "gold", modifiers = ["bold"] }
-"diff.plus" = { fg = "green" }
-"diff.delta" = { fg = "blue" }
+"ui.debug.breakpoint" = { fg = "red" }
+"ui.debug.active" = { fg = "gold" }
+"diff.plus" = { fg = "emerald" }
+"diff.delta" = { fg = "gold" }
 "diff.minus" = { fg = "red" }
 "error" = { fg = "red" }
 "warning" = { fg = "gold" }
@@ -69,7 +73,7 @@
 [palette]
 carbon = "#262727"
 brown = "#5A524F"
-gold = "#F5C462"
+gold = "#F0C37B"
 graphite = "#343231"
 taupe = "#837270"
 dusty_taupe = "#A48C76"
@@ -78,6 +82,8 @@ coral = "#EC9898"
 silk = "#F0D3C9"
 mint = "#84D2C5"
 aqua = "#C0F9FF"
-red = "#F2515E"
-green = "#6CE0B4"
-blue = "#83BCFF"
+red = "#FE737F"
+emerald = "#99E6B7"
+blue = "#99CFFE"
+pink = "#F76A76"
+pale = "#F7ECE1"

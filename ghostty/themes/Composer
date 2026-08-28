@@ -7,10 +7,10 @@ selection-foreground = #F0D3C9
 
 # Normal ANSI
 palette = 0=#262727
-palette = 1=#F2515E
-palette = 2=#6CE0B4
-palette = 3=#F5C462
-palette = 4=#83BCFF
+palette = 1=#FE737F
+palette = 2=#99E6B7
+palette = 3=#F0C37B
+palette = 4=#99CFFE
 palette = 5=#EC9898
 palette = 6=#C0F9FF
 palette = 7=#F0D3C9
